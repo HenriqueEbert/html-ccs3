@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagem/foto-m.png" type="image/png">
+        <img src="imagem/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Agora com Foto</h1>
+       <picture>
+        <source media="(max-width: 750px)" srcset="imagem/eu-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagem/eu-m.png" type="image/png">
+        <img src="imagem/eu-g.png" alt="Imagem flexível">
+    </picture>
+<h1>Reproduzindo Áudio</h1>
+
+<p>Vamos aprender a reproduzir áudios em HTML5</p>
+
+<audio src="midia/happy-mistake.mp3" controls > </audio> 
+<br>
+<audio preload="metadata"  auto play controls>  
+<source src="midia/guanacast-33.mp3" type="audio/mpeg"></source>
+<source src="midia/guanacast-33.ogg" type="audio/ogg"></source>
+<source src="midia/guanacast-33.wav" type="audio/wav"></source>
+</audio>
+
+</p>
+<p>Infelizemente seu navegagor não consegue reproduzir Áudio </p >
+<p>Clique aqui para baixar a música &#x2B07;<p>
+<a href="midia/guanacast-33.mp3" download><input type="button" value="Download"></a>
+<p>Clique aqui para baixar o Podcast &#x2B07;<p>
+    <a href="midia/guanacast-33.mp3" download><input type="button" value="Download"></a>
+</body>
+</html>
