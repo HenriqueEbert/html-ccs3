@@ -18,6 +18,17 @@
             border: 1px solid gray;
             padding: 10px;
         }
+
+        .media{
+            text-align: left;
+            background-color: gray;
+            color: white;
+        }
+
+        .topo{
+            background-color: black;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -27,41 +38,58 @@
         Filmes Favoritos
     </caption>
     <thead>
-        <th scope="col">Área</th>
-        <th scope="col">Disciplina</th>
-        <th colspan="2" scope="colgroup">Notas</th>
-         <th>Média</th>
+        <th scope="col" class="topo">Área</th>
+        <th scope="col" class="topo">Disciplina</th>
+        <th rowspan="4" colspan="2" scope="colgroup" class="topo">Notas </th>
+        <th class="topo">Média</th>
     </thead>
     <tbody>
-        <tr>
+         <tr>
         <th rowspan="4" scope="rowgroup">Exatas</th>
         <td>Matemática</td>
+        <th>0.0</th>
+        <th>0.0</th>
+        <th>0.0</th>
         </tr>
     <tr>
         <td>Física</td>
+        <th>0.0</th>
+        <th>0.0</th>
+        <th>0.0</th>
     </tr>
     <tr>
         <td>Química </td>
+        <th>0.0</th>
+        <th>0.0</th>
+        <th>0.0</th>
     </tr>
 <tr>
     <td>Biologia</td>
+    <th>0.0</th>
+    <th>0.0</th>
+    <th>0.0</th>
 </tr>
+<tr>
+    <th colspan="4" class="media">Média de Exatas</th>
+    <td class="media">0.0</td>
+</tr>
+<tr>
+    <th rowspan="2" scope="rowgroup">Humanas</th>
+    <th>História</th>
+    <th>0.0</th>
+    <th>0.0</th>
+    <th>0.0</th>
     </tr>
-    <th rowspan="2" scope="rowgroup">Notas</th>
-    <td>Nota 1 </td>
-</tr>
-<tr>
-    <td>Daniel Lourenço</td>
-    <td>Wall-E</td>
-    <td>Oldboy</td>
-    <td>Dangal</td>
-</tr>
-<tr>
-    <td>Fabiano Mota</td>
-    <td>Star Wars 5</td>
-    <td>Táxi Driver</td>
-    <td>Toy Story</td>
-</tr>
+    <tr>
+        <th>Geogria</th>
+        <th>0.0</th>
+        <th>0.0</th>
+        <th>0.0</th>
+        </tr>
+        <tr>
+            <th colspan="4" class="media">Média de Humanas</th>
+            <td class="media">0.0</td>
+        </tr>        
     </tbody>
 </table>
 </body>
